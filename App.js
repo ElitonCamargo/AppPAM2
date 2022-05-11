@@ -7,10 +7,26 @@ import imgHomer from './assets/homer-simpson.png';
 export default function App () {
   return (
     <View style={meusStilos.container}>
-      <Image
-        source={ imgBart }
-        style={ meusStilos.imagens }
-      />
+      <View style={meusStilos.chat}>
+        <Text style={meusStilos.nomePer}>Bart</Text>
+        <Text style={meusStilos.msg}>Oi pai</Text>
+        <Image
+          source={ imgBart }
+          style={ meusStilos.imagens }
+        />
+
+      </View>
+
+      <View style={meusStilos.chat}>
+        <Text style={meusStilos.nomePer}>Homer</Text>
+        <Text style={meusStilos.msg}>Fala feio, sua mãe quer falar com você.</Text>
+        <Image
+          source={ imgHomer }
+          style={ meusStilos.imagens }
+        />
+
+      </View>
+
     </View>
   )
 }
@@ -19,21 +35,43 @@ const meusStilos = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#000'    
+    backgroundColor: '#FFF'    
+  },
+  chat:{
+    padding: 20,
+    backgroundColor: '#000',    
+    width: 350,
+    borderRadius:10,
+    marginBottom: 20
   },
   imagens: {
-    width: 250,
-    height: 250,
+    width: 80,
+    height: 80,
     borderColor: '#fff',
-    borderTopWidth: 15,
-    borderLeftWidth: 10,   
-    borderRightWidth: 10,   
-    borderBottomWidth: 7,
+    borderTopWidth: 7,
+    borderLeftWidth: 5,   
+    borderRightWidth: 5,   
+    borderBottomWidth: 2,
     borderStyle: 'solid',
     borderRadius: 125,
     borderTopColor: '#ff0',
     borderBottomColor: 'red',
     borderTopRightRadius: 0
+  },
+  nomePer:{
+    fontSize: 30,
+    color: '#FF0',
+    fontWeight: 'bold',
+    lineHeight: 40
+
+  },
+  msg:{
+    fontSize: 20,
+    color: '#FFF', 
+    lineHeight: 40,
+    letterSpacing: 5,
+    fontStyle: 'italic',
+    textAlign: 'justify'
   }
 });
 
