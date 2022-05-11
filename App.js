@@ -19,10 +19,21 @@ const meusStilos = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#00fdf1cc'    
+    backgroundColor: '#000'    
   },
   imagens: {
-
+    width: 250,
+    height: 250,
+    borderColor: '#fff',
+    borderTopWidth: 15,
+    borderLeftWidth: 10,   
+    borderRightWidth: 10,   
+    borderBottomWidth: 7,
+    borderStyle: 'solid',
+    borderRadius: 125,
+    borderTopColor: '#ff0',
+    borderBottomColor: 'red',
+    borderTopRightRadius: 0
   }
 });
 
