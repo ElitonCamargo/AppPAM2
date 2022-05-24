@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Text, View, StyleSheet } from 'react-native';
 
-import Logo from './assets/logo.png';
+import Logo from './assets/Bart_Simpson_200px.png';
 
 export default function App() {
   return (
