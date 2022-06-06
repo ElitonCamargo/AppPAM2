@@ -5,6 +5,7 @@ const estilos = StyleSheet.create({
     backgroundColor: '#fff',
     paddingVertical: 10,
     paddingHorizontal: 20,
+    alignItems: 'center'
   },
   titulo: {
     fontSize: 22,
@@ -18,9 +19,9 @@ const estilos = StyleSheet.create({
     marginTop: 6,
   },
   imagem: {
-    width: 250,
-    height: 100,
-    marginTop: 10,
+    width: 300,
+    height: 200,
+    marginTop: 10,    
   }
 });
 
